@@ -1,2 +1,2 @@
-# TASK-MANAGER-APP
-This is my first app project.
+# MY STICKY NOTES APP
+This is my first application project.
