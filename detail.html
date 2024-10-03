@@ -1,0 +1,8 @@
+{% extends 'notes/base.html' %}
+
+{% block content %}
+    <h2>{{ Mystcickynote.title }}</h2>
+    <p>{{ Mystickynote.content }}</p>
+    <a href="{% url 'Mystickynote_edit' Mystickynote.pk %}">Edit</a>
+    <a href="{% url 'Mystickynote_delete' Mstickynote.pk %}">Delete</a>
+{% endblock %}

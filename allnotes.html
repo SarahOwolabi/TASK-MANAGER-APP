@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{{page_title}}</h2>
+
+    <ul>
+        {% for Mystickynote in Mystickynotes %}
+            <li>
+                <div>
+                <a href="{% url 'Mystickynote' pk=Mstickynote.pk %}">{{ Mystickynote.title }}</a></li>
+                <p>{{post.creator}}</p>
+            <li>
+<a href="{%url 'mystickynote' pk=Mystickynote.pk%}">
+    link
+            </a>
+            <a href="{% ur 'Mystickynote' pk=Mystickynote.pk %}">
+                delete
+            </a>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'note_new' %}">Add a new note</a>
+{% endblock %}
